@@ -24,7 +24,7 @@
 
                 <form method="post" enctype="multipart/form-data">
                     <fieldset class="child-info">
-                        <legend>Child's information</legend>
+                        <legend>Information of the child</legend>
 
                         <div class="input-wrapper">
                             <label for="fullname">Full name</label>
@@ -97,6 +97,30 @@
                             <div class="input-wrapper flex-1">
                                 <label for="state">State</label>
                                 <input type="text" id="state" name="state" value="SP" disabled>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="guardian">
+                        <legend>Information of the guardian</legend>
+
+                        <div class="input-wrapper">
+                            <label for="guardian">Guardian's name</label>
+                            <input type="text" id="guardian" name="guardian">
+                            <small>Main guardian and emergency contact</small>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(16) 99235-1717">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="mail" required>
+                            <div class="error">
+                                <img src="assets/icons/alert-circle.svg" alt="Red icon alert">
+                                <span>Insert a valid email</span>
                             </div>
                         </div>
                     </fieldset>
